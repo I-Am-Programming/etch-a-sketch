@@ -1,0 +1,63 @@
+body {
+  background: url(background.jpeg);
+}
+
+.cells {
+  height: 25px;
+  border: 1px solid rgb(46, 46, 46);
+  background-color: white;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 450px;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  outline: 3px solid black;
+}
+
+.clear {
+  background-color: white;
+}
+
+.buttons {
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  margin: 0 5px;
+}
+
+.clear {
+  background-color: #6c757d;
+  color: white;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  font-size: 100px;
+}
+
+@media screen and (max-width: 771px) {
+  h1 {
+    margin-top: 50px;
+    font-size: 60px;
+  }
+
+  .buttons {
+    display: flex;
+  }
+
+  .btn {
+    width: 90px;
+  }
+}
